@@ -13,6 +13,7 @@ public class Book implements IBook {
     private String mCatagory;
     private String mReadingStatus;
     private List<String> mNotes;
+    private int mPages;
 
     public Book() {
         uuid = UUID.randomUUID();
@@ -20,6 +21,7 @@ public class Book implements IBook {
         mName = "Book"+id;
         mCatagory = mReadingStatus = "Any";
         mTags = mNotes = new ArrayList<>();
+        mPages = 0;
     }
 
     public Book(String name, String catagory, String readingStatus, List<String> tags) {
@@ -30,6 +32,7 @@ public class Book implements IBook {
         mReadingStatus = readingStatus != null ? readingStatus : "Any";
         mTags = tags != null ? tags : new ArrayList<>();
         mNotes = new ArrayList<>();
+        mPages = 0;
     }
 
     public Book( String name, String catagory, String readingStatus, List<String> tags,
@@ -37,6 +40,7 @@ public class Book implements IBook {
         this( name, catagory, readingStatus, tags);
         if (notes != null)
             mNotes = notes;
+            mPages = 0;
     }
 
     @Override
@@ -144,6 +148,15 @@ public class Book implements IBook {
         if (readingStatus != null && readingStatus.trim() != "") {
             mReadingStatus = readingStatus;
         }
+    }
+
+    @Override
+    public int getPages() {
+        return mPages;
+    }
+    @Override
+    public void setPages(int pages) {
+        mPages = pages;
     }
 
     @Override

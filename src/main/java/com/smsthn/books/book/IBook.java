@@ -26,6 +26,9 @@ public interface IBook extends Comparable{
     String getReadingStatus();
     void setReadingStatus(String readingStatus);
 
+    int getPages();
+    void setPages(int pages);
+
     boolean compare(Book book);
 
     boolean hasCatagory(String catagory);
