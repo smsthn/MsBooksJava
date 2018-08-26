@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "MsBooksJava",
+                "projectName": "MsBooksJava",
+                "workingDirectory": "/home/smsthn/Documents/Java/MsBooksJava",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "MsBooksJava",
+                "projectName": "MsBooksJava",
+                "workingDirectory": "/home/smsthn/Documents/Java/MsBooksJava",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
